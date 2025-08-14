@@ -2,4 +2,6 @@
 
   search for outfit font in google fonts and import it and include it in * {}
 
-  add logo of navbar inside <a href= "/"> </a> this will take us to home page when clicked on logo.
+  add logo of navbar inside <a href= "/"> </a> this will take us to home page when clicked on logo
+
+  flex: 1; will make use entire space available in the row
