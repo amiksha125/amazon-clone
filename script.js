@@ -1,6 +1,6 @@
 const imgs = document.querySelectorAll(".header-slider ul img")
-const prev_btn = document.querySelectorAll(".control-prev");
-const next_btn = document.querySelectorAll(".control-next");
+const prev_btn = document.querySelector(".control-prev");
+const next_btn = document.querySelector(".control-next");
 
 let n = 0;
 
@@ -14,4 +14,23 @@ function changeSlide(){
 }
 
 changeSlide();
+
+prev_btn.addEventListener('click', (e) => {
+    if(n > 0){
+        n -= 1;
+    } else {
+        n = imgs.length - 1;
+    }
+    changeSlide();
+})
+
+next_btn.addEventListener('click', (e) => {
+  // I wrote this code 
+    if(n == imgs.length - 1){
+        n = 0;
+    } else {
+        n += 1;
+    }
+    changeSlide();
+})
  
