@@ -33,4 +33,16 @@ next_btn.addEventListener('click', (e) => {
     }
     changeSlide();
 })
+
+//to scroll the sports and outdoor products by simply using mousewheel
+
+const scrollContainer = document.querySelectorAll('.products')
+
+for(const item of scrollContainer){
+    item.addEventListener('wheel', (event) => {
+        //prevent default feauture
+        event.preventDefault();
+        item.scrollLeft += event.deltaY // now we can scroll normally
+    })
+}
  

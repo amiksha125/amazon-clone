@@ -188,3 +188,9 @@ nav{
    max-width: 200px;
    max-height: 200px;
 }
+
+/* hide the scroll bar */
+
+.product-slider .products::-webkit-scrollbar{
+    display: none;
+}
