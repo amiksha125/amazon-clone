@@ -194,3 +194,17 @@ nav{
 .product-slider .products::-webkit-scrollbar{
     display: none;
 }
+
+.product-slider-with-price{
+    background: #fff;
+    margin: 0 30px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.product-slider-with-price .products{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
